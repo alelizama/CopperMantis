@@ -30,7 +30,12 @@ module.exports.routes = {
 
   '/': {
     response: 'ok'
-  }
+  },
+
+  'post /saludo' : 'SaludoController.create',
+  'get /saludo/:id?' :'SaludoController.find',
+  'put /sleep/:id?' :'SaludoController.update',
+  'delete /sleep/:id?' : 'SaludoController.destroy'
   /***************************************************************************
   *                                                                          *
   * Custom routes here...                                                    *
